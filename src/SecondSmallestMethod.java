@@ -37,7 +37,11 @@ public class SecondSmallestMethod {
                  if (arr[i] > smallest && arr[i] < secondSmallest) {
                      secondSmallest = arr[i];
                  }
-
+                 }
+            for (int j = 0; j < arr.length ; j++) {
+                if (arr[j] < secondSmallest && arr[j] > smallest){
+                    secondSmallest = arr[j];
+                 }
              }
              return secondSmallest;
          }
